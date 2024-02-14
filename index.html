@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>happy-valentines</title>
+</head>
+<body>
+    <div class="happy-valentines">
+        <div class="valentines-day-card">
+          <div class="clouds"></div>
+          <div class="hearts">
+            <div class="heartOne">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+            <div class="heartTwo">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+                <div class="heartThree">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFour">
+              <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+             <div class="heartFive">
+             <div class="left-side"></div>
+              <div class="right-side"></div>
+            </div>
+          </div>
+          <div class="text"><span>Happy Valentine's</br> Day! <br>Sepuuuuuh!</div>
+        </div>
+        <p class="hover">- Dibuka satu satu ya -</p>
+        <div class="button">
+            <button>
+                <a href="flower.html">Box Pertama</a>
+            </button>
+            <button>
+                <a href="ketiga.html">Box Kedua</a>
+            </button>
+        </div>
+        </div>
+
+        <audio id="background-music" loop autoplay>
+            <source src="audio/love.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    
+          <script>window.addEventListener('load', function() {
+            var audio = document.getElementById("background-music");
+          
+            document.addEventListener('visibilitychange', function() {
+              if (document.visibilityState === 'hidden') {
+                audio.pause();
+              } else {
+                audio.play();
+              }
+            });
+          });
+          </script>
+</body>
+</html>

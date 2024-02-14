@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ketiga.css">
+    <title>Cincin</title>
+</head>
+<body>
+    <div class="jewellery-box">
+        <input id="open" type="checkbox">
+        <label class="open" for="open"></label>
+        <div class="bottom"></div>
+        <div class="inner-top"></div>
+        <div class="inner-bottom"></div>
+        <div class="text">I Love You Sepuuh</div>
+        <div class="diamond-ring">
+          <div class="diamond"></div>
+          <div class="band"></div>
+          <div class="inner"></div>
+          <div class="details"></div>
+        </div>  
+      </div>
+      <audio id="background-music" loop autoplay>
+        <source src="audio/cantik2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <script>window.addEventListener('load', function() {
+        var audio = document.getElementById("background-music");
+      
+        document.addEventListener('visibilitychange', function() {
+          if (document.visibilityState === 'hidden') {
+            audio.pause();
+          } else {
+            audio.play();
+          }
+        });
+      });
+      </script>
+</body>
+</html>
